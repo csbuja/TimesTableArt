@@ -16,9 +16,12 @@ def plotTimesTable(factor, divisor):
     y1 = positions["y1"]
     y2 = positions["y2"]
 
+    plt.figure()
+    plt.axis('off')
     for i in range(len(x1)):
-        plt.plot([x1[i],x2[i]], [y1[i], y2[i]], marker = 'o', color='blue')
-    plt.savefig("timesTable-f" + str(factor) + "-d" + str(divisor) +".png")
+        plt.plot([x1[i],x2[i]], [y1[i], y2[i]], marker = '', color='#87CEFA',  linewidth=0.25)
+        
+    plt.savefig("timesTable-f" + str(factor) + "-d" + str(divisor) +".png", bbox_inches='tight',  dpi=300)
 
 def plotTimesTableSequence(factors, divisor):
     for factor in factors:

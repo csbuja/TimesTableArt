@@ -1,3 +1,5 @@
 {
-    "divisor" : 4
+    "divisor" : 400,
+    "minFactor" : 2,
+    "maxFactor" : 99
 }
